@@ -1,11 +1,13 @@
 'use strict'
 const api = require('./api')
+const ui = require('./ui')
 
 
 const getAllBooks = () => {
   api.indexBooks()
+  .then(ui.getAllBooksSuccess)
 }
 
 const bookHandlers = () => {
-  $('#get-book').on('click', getAllBooks)
+  $('#get-books').on('click', getAllBooks)
 }
