@@ -6,6 +6,6 @@ const getAllBooks = () => {
   api.indexBooks()
 }
 
-const bookHandlers = () => {}
+const bookHandlers = () => {
   $('#get-book').on('click', getAllBooks)
 }
