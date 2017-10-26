@@ -8,3 +8,7 @@ const indexBooks = function () {
     method: 'GET'
     })
 }
+
+module.exports = {
+  indexBooks
+}
