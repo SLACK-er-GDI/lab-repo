@@ -11,3 +11,7 @@ const getAllBooks = () => {
 const bookHandlers = () => {
   $('#get-books').on('click', getAllBooks)
 }
+
+module.exports = {
+  getAllBooks
+}
