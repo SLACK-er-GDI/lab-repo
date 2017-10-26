@@ -2,8 +2,10 @@
 
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
+const events = require('.events')
 
 $(() => {
+  events.bookHandlers()
   setAPIOrigin(location, config)
 })
 
